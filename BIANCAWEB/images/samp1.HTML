@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Government Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Philippine Government Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.gov.ph/" target="_blank">Government Portal</a></li>
+            <li><a href="https://www.doh.gov.ph/" target="_blank">Department of Health (DOH)</a></li>
+            <li><a href="https://www.dti.gov.ph/" target="_blank">Department of Trade and Industry (DTI)</a></li>
+            <li><a href="https://www.deped.gov.ph/" target="_blank">Department of Education (DepEd)</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>Click on the links below or use the image map for easy navigation.</p>
+            <div class="gov-links">
+                <a class="gov-link" href="https://www.gov.ph/" target="_blank">
+                    <img src="gov_logo.png" alt="Government Logo"> Official Philippine Government Portal
+                </a>
+                <a class="gov-link" href="https://www.doh.gov.ph/" target="_blank">
+                    <img src="doh_logo.png" alt="DOH Logo"> Department of Health (DOH)
+                </a>
+                <a class="gov-link" href="https://www.dti.gov.ph/" target="_blank">
+                    <img src="dti_logo.png" alt="DTI Logo"> Department of Trade and Industry (DTI)
+                </a>
+                <a class="gov-link" href="https://www.deped.gov.ph/" target="_blank">
+                    <img src="deped_logo.png" alt="DepEd Logo"> Department of Education (DepEd)
+                </a>
+            </div>
+        </section>
+        <section class="map-container">
+            <h2>Image Map Navigation</h2>
+            <img src="philippines_map.jpg" usemap="#govmap" alt="Map of the Philippines">
+            <map name="govmap">
+                <area shape="rect" coords="50,50,200,150" href="https://www.gov.ph/" alt="Government Portal" target="_blank">
+                <area shape="circle" coords="300,100,50" href="https://www.doh.gov.ph/" alt="Department of Health" target="_blank">
+                <area shape="poly" coords="400,50,450,100,400,150" href="https://www.dti.gov.ph/" alt="Department of Trade and Industry" target="_blank">
+            </map>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Philippine Government Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

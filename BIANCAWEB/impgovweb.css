@@ -1,0 +1,123 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('government_bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #0033A0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0055A5;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #002366;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gov-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gov-link {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-decoration: none;
+            color: #0033A0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .gov-link img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .map-container {
+            margin-top: 20px;
+            position: relative;
+        }
+        .map-container h2 {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 51, 160, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .map-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+    body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}

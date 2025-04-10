@@ -1,0 +1,139 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('government_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+        header {
+            background-color: #003366;
+            padding: 15px;
+            font-size: 24px;
+            color: white;
+        }
+        nav {
+            background: #0055a4;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background: #003366;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #003366;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        h2, h3 {
+            color: #002855;
+        }
+        .hidden {
+            display: none;
+        }
+        .gov-links {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gov-links a img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            background: white;
+            padding: 10px;
+        }
+        .gov-links a img:hover {
+            transform: scale(1.1);
+        }
+        .map-section {
+            margin-top: 30px;
+        }
+        .contact {
+            background: #f8f8f8;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 80%;
+            color: #003366;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #003366;
+            padding: 10px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Fact Memory Cloud */
+        .fact-container {
+            position: fixed;
+            right: 20px;
+            top: 150px;
+            width: 220px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .fact-container img {
+            width: 100px;
+            height: auto;
+        }
+        .fact-text {
+            font-size: 14px;
+            color: #003366;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}

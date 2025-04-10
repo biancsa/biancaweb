@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Services Portal</title>
+    </head>
+<body>
+
+    <header>
+        <h1>Government Services Portal</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('services')">Services</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="home">
+            <h2>Welcome to the Official Government Portal</h2>
+            <p>Your trusted source for official government services and information.</p>
+
+            <h3>Visit Government Agencies</h3>
+            <div class="gov-links">
+                <a href="https://www.dti.gov.ph" target="_blank">
+                    <img src="dti_logo.png" alt="DTI">
+                </a>
+                <a href="https://www.doh.gov.ph" target="_blank">
+                    <img src="doh_logo.png" alt="DOH">
+                </a>
+                <a href="https://www.deped.gov.ph" target="_blank">
+                    <img src="deped_logo.png" alt="DepEd">
+                </a>
+            </div>
+
+            <div class="map-section">
+                <h3>Explore the Philippines</h3>
+                <p>Click the map below to visit GOV.PH</p>
+                <img src="philippines_map.jpg" usemap="#govmap" alt="Philippines Map" width="300">
+                
+                <map name="govmap">
+                    <area shape="rect" coords="0,0,300,300" href="https://www.gov.ph" target="_blank" alt="GOV.PH">
+                </map>
+            </div>
+        </div>
+
+        <div id="about" class="hidden">
+            <h2>About This Portal</h2>
+            <p>This website serves as a central hub for accessing important government services, announcements, and resources. Our goal is to make information easily accessible for all citizens.</p>
+        </div>
+
+        <div id="services" class="hidden">
+            <h2>Our Services</h2>
+            <p>We provide the following government services:</p>
+            <ul>
+                <li>Business Registration (DTI)</li>
+                <li>Health and Medical Services (DOH)</li>
+                <li>Education & School Services (DepEd)</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Email: support@govservices.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Government Services Office, Manila, Philippines</p>
+        </div>
+    </div>
+
+    <!-- Fact Memory Cloud -->
+    <div class="fact-container">
+        <img src="duck.gif" alt="Memory Cloud">
+        <p class="fact-text" id="fact-text">Did you know? The Philippines has 7,641 islands!</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Government Services | All Rights Reserved
+    </footer>
+
+    <script>
+        function showSection(section) {
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('services').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById(section).classList.remove('hidden');
+        }
+
+        // Rotating Facts
+        const facts = [
+            "Did you know? The Philippines has 7,641 islands!",
+            "The Philippines is home to the world's smallest volcano, Taal Volcano.",
+            "Jeepneys, a popular mode of transport, evolved from U.S. military jeeps.",
+            "The country ranks as one of the largest producers of coconuts.",
+            "The Tarsier, one of the world’s smallest primates, is found here."
+        ];
+
+        let factIndex = 0;
+        function changeFact() {
+            factIndex = (factIndex + 1) % facts.length;
+            document.getElementById("fact-text").innerText = facts[factIndex];
+        }
+        setInterval(changeFact, 5000);
+    </script>
+
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="govyduck.css" rel="stylesheet">
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb16.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250"></a>
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="BIANCALOCSIN_GOVWEB.css" rel="stylesheet">
+</head>
+<body>
+
+</body>
+</html>

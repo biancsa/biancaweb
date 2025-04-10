@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Services Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('government_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+        header {
+            background-color: #003366;
+            padding: 15px;
+            font-size: 24px;
+            color: white;
+        }
+        nav {
+            background: #0055a4;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background: #003366;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #003366;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        h2, h3 {
+            color: #002855;
+        }
+        .hidden {
+            display: none;
+        }
+        .gov-links {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gov-links a img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            background: white;
+            padding: 10px;
+        }
+        .gov-links a img:hover {
+            transform: scale(1.1);
+        }
+        .map-section {
+            margin-top: 30px;
+        }
+        .contact {
+            background: #f8f8f8;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 80%;
+            color: #003366;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #003366;
+            padding: 10px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Fact Memory Cloud */
+        .fact-container {
+            position: fixed;
+            right: 20px;
+            top: 150px;
+            width: 220px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .fact-container img {
+            width: 100px;
+            height: auto;
+        }
+        .fact-text {
+            font-size: 14px;
+            color: #003366;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Government Services Portal</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('services')">Services</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="home">
+            <h2>Welcome to the Official Government Portal</h2>
+            <p>Your trusted source for official government services and information.</p>
+
+            <h3>Visit Government Agencies</h3>
+            <div class="gov-links">
+                <a href="https://www.dti.gov.ph" target="_blank">
+                    <img src="dti_logo.png" alt="DTI">
+                </a>
+                <a href="https://www.doh.gov.ph" target="_blank">
+                    <img src="doh_logo.png" alt="DOH">
+                </a>
+                <a href="https://www.deped.gov.ph" target="_blank">
+                    <img src="deped_logo.png" alt="DepEd">
+                </a>
+            </div>
+
+            <div class="map-section">
+                <h3>Explore the Philippines</h3>
+                <p>Click the map below to visit GOV.PH</p>
+                <img src="philippines_map.jpg" usemap="#govmap" alt="Philippines Map" width="300">
+                
+                <map name="govmap">
+                    <area shape="rect" coords="0,0,300,300" href="https://www.gov.ph" target="_blank" alt="GOV.PH">
+                </map>
+            </div>
+        </div>
+
+        <div id="about" class="hidden">
+            <h2>About This Portal</h2>
+            <p>This website serves as a central hub for accessing important government services, announcements, and resources. Our goal is to make information easily accessible for all citizens.</p>
+        </div>
+
+        <div id="services" class="hidden">
+            <h2>Our Services</h2>
+            <p>We provide the following government services:</p>
+            <ul>
+                <li>Business Registration (DTI)</li>
+                <li>Health and Medical Services (DOH)</li>
+                <li>Education & School Services (DepEd)</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Email: support@govservices.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Government Services Office, Manila, Philippines</p>
+        </div>
+    </div>
+
+    <!-- Fact Memory Cloud -->
+    <div class="fact-container">
+        <img src="duck.gif" alt="Memory Cloud">
+        <p class="fact-text" id="fact-text">Did you know? The Philippines has 7,641 islands!</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Government Services | All Rights Reserved
+    </footer>
+
+    <script>
+        function showSection(section) {
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('services').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById(section).classList.remove('hidden');
+        }
+
+        // Rotating Facts
+        const facts = [
+            "Did you know? The Philippines has 7,641 islands!",
+            "The Philippines is home to the world's smallest volcano, Taal Volcano.",
+            "Jeepneys, a popular mode of transport, evolved from U.S. military jeeps.",
+            "The country ranks as one of the largest producers of coconuts.",
+            "The Tarsier, one of the world’s smallest primates, is found here."
+        ];
+
+        let factIndex = 0;
+        function changeFact() {
+            factIndex = (factIndex + 1) % facts.length;
+            document.getElementById("fact-text").innerText = facts[factIndex];
+        }
+        setInterval(changeFact, 5000);
+    </script>
+
+</body>
+</html>
